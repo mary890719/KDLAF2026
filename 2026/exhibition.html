@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>裝置展覽 | 2026關渡光藝術節</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body id="top">
+        <header>
+            <div class="header-wrapper">
+                <h1>
+                    <a href="index.html" class="logo-link">
+                        <span class="visually-hidden">2026關渡光藝術節《幻響》</span>
+                        <img src="images/LOGO.png" alt="2026關渡光藝術節 Kuandu Light Art Festival" class="logo-img" />
+                    </a>
+                </h1>
+                
+                <!-- 漢堡按鈕 -->
+                <button class="hamburger" onclick="toggleMenu()" aria-label="開啟選單">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="about.html"><span class="lang-zh_tw">關於幻響</span><span class="lang-en">About</span></a></li>
+                    <li><a href="information.html"><span class="lang-zh_tw">活動資訊</span><span class="lang-en">Information</span></a></li>
+                    <li><a href="exhibition.html"><span class="lang-zh_tw">裝置展覽</span><span class="lang-en">Exhibition</span></a></li>
+                    <li><a href="performance.html"><span class="lang-zh_tw">音像演出</span><span class="lang-en">Performance</span></a></li>
+                    <li><a href="archives.html"><span class="lang-zh_tw">歷年光節</span><span class="lang-en">Archives</span></a></li>
+                    <li><a href="https://www.facebook.com/KDLAF/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/kdlaf_2025/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="exhibi">
+                <div class="map-container">
+                    <div class="hotspot" id="point1"></div>
+                    <div class="hotspot" id="point2"></div>
+                    <div class="hotspot" id="point3"></div>
+                    <div class="hotspot" id="point4"></div>
+
+                    <!-- 新增提示文字 -->
+                    <p class="map-hint">點擊裝置展覽位置，下方將顯示作品資訊。</p>
+                </div>
+                <!-- 新增資訊顯示區 -->
+                <div id="infoDisplay" class="info-display">
+                    <div class="carousel">
+                        <img id="infoImage" class="preview" src="" alt="作品圖片" />
+                        <div class="dots" id="infoDots"></div>
+                    </div>
+                    <h2 id="infoTitle"></h2>
+                    <h3 id="infoArtist"></h3>
+                    <h4 id="infoMeta"></h4>
+                    <div id="infoText" class="work-description"></div>
+                    <section id="artistInfo" class="artist-info">
+                        <h3>Artist｜藝術家</h3>
+                        <div class="artist-info-content">
+                            <img id="artistImage" class="artist-image" alt="" />
+                            <div class="artist-bio">
+                                <h4 id="artistName"></h4>
+                                <div id="artistBioText"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <div class="footer-icon">
+                    <p>
+                        主辦單位｜
+                        <a href="https://w3.tnua.edu.tw/" target="_blank"><img src="images/tnua_logo.png" alt="北藝大校網" class="footer-icon1"></a>
+                        <a href="https://nma.tnua.edu.tw/" target="_blank"><img src="images/nma_logo.png" alt="北藝大新媒系系網" class="footer-icon2"></a>
+                        指導單位｜
+                        <a href="https://www.edu.tw/Default.aspx" target="_blank"><img src="images/edu_logo.png" alt="教育部官網" class="footer-icon3"></a>
+                    </p>
+                </div>
+
+                <div class="footer-infor">
+                    <p>2026 © 國立臺北藝術大學新媒體藝術學系 ｜ Department of New Media Art, TNUA</p>
+                    <p>台北市北投區學園路1號 ｜ 電話：02-28961000#3142 ｜ E-mail: tnua.newmedia@gmail.com</p>
+                </div>
+            </div>
+        </footer>
+
+        <button id="backToTop" title="回到頂部">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+        <script src="script.js"></script>
+
+    </body>
+</html>

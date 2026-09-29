@@ -1,0 +1,21 @@
+# 作業系統與檔案管理器
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 編輯器與暫存檔
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+.vscode/
+.idea/
+
+# 執行環境產物
+__pycache__/
+*.py[cod]
+node_modules/
+
+# 工作素材與來源檔；正式網站圖片位於 2026/images/
+2026/asset/
