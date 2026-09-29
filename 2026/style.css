@@ -326,10 +326,9 @@ main {
 }
 
 .map-hint {
-    position: absolute;
-    bottom: 10px; /* 距離圖片底部 10px */
-    left: 50%;
-    transform: translateX(-50%);
+    width: fit-content;
+    max-width: calc(100% - 32px);
+    margin: 0 auto 15px;
     background-color: rgba(255, 255, 255, 0.92);
     border: 1px solid #292626;
     color: #292626;
@@ -338,6 +337,10 @@ main {
     font-size: clamp(10px, 1.5vw, 16px);
     z-index: 10;
     white-space: nowrap;
+}
+
+.map-hint + .info-display {
+    margin-top: 16px;
 }
 
 /* 點位 (Hotspot) */
@@ -740,12 +743,26 @@ footer li {
     display: block;
 }
 
-/* 平板版 RWD */
-@media (max-width: 1024px) and (min-width: 769px) {
+/* 平板 Header */
+@media (max-width: 1024px) and (min-width: 910px) {
     .logo-link {
         width: min(42vw, 420px);
     }
 
+    nav ul {
+        padding-left: 0;
+        padding-right: 0;
+        right: 50px;
+    }
+
+    nav li {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+/* 平板版 RWD */
+@media (max-width: 1024px) and (min-width: 769px) {
     /* About 區塊 */
     .about, .exhibinfor, .archive {
         padding: 60px 40px;
@@ -847,14 +864,10 @@ footer li {
     }
 }
 
-/* 手機版 */
-@media (max-width: 768px) {
+/* Header / Navigation：909px 以下使用 fullscreen menu */
+@media (max-width: 909px) {
     header {
         justify-content: center;
-    }
-
-    main {
-        padding-top: 80px; /* 與 header 高度一致 */
     }
 
     h1 {
@@ -872,7 +885,6 @@ footer li {
         z-index: 2200;
     }
 
-    /* 漢堡開啟時，LOGO 置左 */
     header.menu-open {
         justify-content: flex-start;
         padding-left: 1rem;
@@ -936,6 +948,13 @@ footer li {
         font-size: 18px;
         color: #292626;
         text-decoration: none;
+    }
+}
+
+/* 手機版 */
+@media (max-width: 768px) {
+    main {
+        padding-top: 80px; /* 與 header 高度一致 */
     }
 
     .banner {
