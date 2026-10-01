@@ -164,6 +164,8 @@ Object.keys(modalDataList).forEach((id) => {
 // Performance Gallery：1 張單圖、2 張雙欄、3 張以上主圖加縮圖。
 document.querySelectorAll(".performance-gallery").forEach((gallery) => {
     const images = gallery.dataset.images.split("|").filter(Boolean);
+    const galleryLayout = gallery.dataset.galleryLayout || "";
+    const credit = gallery.dataset.credit || "";
     const title = gallery.dataset.title || "演出圖片";
     if (!images.length) return;
     if (images.length === 1) {
@@ -171,13 +173,13 @@ document.querySelectorAll(".performance-gallery").forEach((gallery) => {
         gallery.innerHTML = `<img src="${images[0]}" alt="${title}">`;
         return;
     }
-    if (images.length === 2) {
+    if (images.length === 2 && galleryLayout !== "multiple") {
         gallery.classList.add("gallery-dual");
         gallery.innerHTML = images.map((src, i) => `<img src="${src}" alt="${title} ${i + 1}">`).join("");
         return;
     }
     gallery.classList.add("gallery-multiple");
-    gallery.innerHTML = `<img class="gallery-main-image" src="${images[0]}" alt="${title} 1"><div class="gallery-thumbnails">${images.map((src, i) => `<button type="button" class="gallery-thumbnail${i === 0 ? " active" : ""}" data-src="${src}" data-index="${i}"><img src="${src}" alt="切換至 ${title} ${i + 1}"></button>`).join("")}</div>`;
+    gallery.innerHTML = `<img class="gallery-main-image" src="${images[0]}" alt="${title} 1"><div class="gallery-thumbnails">${images.map((src, i) => `<button type="button" class="gallery-thumbnail${i === 0 ? " active" : ""}" data-src="${src}" data-index="${i}"><img src="${src}" alt="切換至 ${title} ${i + 1}"></button>`).join("")}</div>${credit ? `<p class="gallery-credit">${credit}</p>` : ""}`;
     const mainImage = gallery.querySelector(".gallery-main-image");
     gallery.querySelectorAll(".gallery-thumbnail").forEach((thumbnail) => {
         thumbnail.addEventListener("click", () => {
