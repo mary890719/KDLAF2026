@@ -369,8 +369,8 @@ main {
 /* 點位位置設定 */
 #point1 { top: 35.1%; left: 76.8%; }
 #point2 { top: 59.9%; left: 8.3%; }
-#point3 { top: 12.3%; left: 28.9%; }
-#point4 { top: 11.5%; left: 8.3%; }
+#point3 { top: 11.5%; left: 8.3%; }
+#point4 { top: 12.3%; left: 28.9%; }
 
 .info-display {
     display: none; /* 預設隱藏 */

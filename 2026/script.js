@@ -40,7 +40,7 @@ const modalDataList = {
         images: ["images/works/2-1.webp"]
     },
     3: {
-        artistZh: "Marc Vilanova", artistEn: "Marc Vilanova", artistImage: "",
+        artistZh: "Marc Vilanova", artistEn: "Marc Vilanova", artistImage: "images/artist/work-3.webp",
         artistBioZh: `Marc Vilanova 是橫跨藝術、科學與科技的聲音／視覺藝術家，創作涵蓋聲音／光線雕塑、裝置與表演，常與舞蹈、劇場及動態影像合作。曾獲 Headlands Center for the Arts（2020）、Bemis Center（2019）、KARA Award（2018）等駐村與獎項，作品於亞洲、美洲及歐洲多國藝術節展出。他亦是教育者，曾任東京藝術大學等校客座教授，教授跨領域創作與現場電子音樂。`,
         artistBioEn: `Marc Vilanova is a sound and visual artist whose work spans art, science, and technology. His practice includes sound/light sculptures, installations, and performances, often in collaboration with dance, theatre, and moving images. He has received grants and residencies including the Headlands Center for the Arts (2020), Bemis Center (2019), and KARA Award (2018), and his work has been presented at festivals across Asia, the Americas, and Europe. He is also an educator, having served as a guest professor at Tokyo University of the Arts and other institutions, teaching transdisciplinary creation and live electronics.`,
         titleZh: "Cascade", titleEn: "Cascade", year: "",
@@ -48,7 +48,7 @@ const modalDataList = {
         mediumEn: "Multi-channel sound, speaker cones, light-diffusing optic fiber, lasers, amplifiers, audio interfaces, 3D printed modules, custom PWM-DMX boards, wood, custom software",
         descriptionZh: `瀑布會發出對特定候鳥導航至關重要的次聲波，工業噪音污染正威脅著遷徙。《Cascade》以無法發出如此低頻的小型揚聲器，重現各地瀑布的次聲波錄音；揚聲器的震動啟動一條光纖，讓聲音以「墜落」的方式呈現，形成將聲波視覺化的光之簾幕，挑戰人類的感知能力，去中心化人類作為「萬物尺度」的位置。震動可被看見、感受與觸摸，帶來強調物種間連結的多重感官體驗。光纖照亮觀者所在之處，提醒我們保護自然中常被忽視的元素。`,
         descriptionEn: `Waterfalls emit infrasonic frequencies vital for the navigation of certain birds, which use them as a compass during their migrations. Recently, noise pollution from industrialization has threatened this journey. Cascade attempts to reproduce the infrasonic recordings of various waterfalls using small speakers incapable of emitting such low frequencies. However, their vibrations activate an optical fiber through which the sound "falls," creating a curtain of light that visualizes the sound waves, offering an alternative form of listening. This challenges human auditory and perceptual capabilities, decentering our position as "the measure of all things." Such vibration can be seen, felt, and touched with the skin, providing a multisensory experience that emphasizes interspecies connections through "feeling with" others and the body. The fibers of Cascade illuminate the viewer's position, reminding us of the critical importance of preserving the often unseen elements of nature.\nThis work was partially realized through the European Media Art Platform residency program at gnration, with support from the Creative Europe Culture Programme of the European Union, Avatar Center, and the Institut Ramon Llull.`,
-        images: []
+        images: ["images/works/3-1.webp", "images/works/3-2.webp", "images/works/3-3.webp", "images/works/3-4.webp"]
     },
     4: {
         artistZh: "Jin Lee", artistEn: "Jin Lee", artistImage: "images/artist/work-4.webp",
