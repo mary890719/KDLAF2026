@@ -319,7 +319,7 @@ main {
     max-width: 100%;
     aspect-ratio: 7984 / 4500;
     margin: auto;
-    background-image: url("images/map.webp");
+    background-image: url("images/map.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
